@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Flexbox</title>
+    <style>
+        .box {
+            font-size: 2em;
+            font-weight: 700;
+            border: 3px dashed peru;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            border: 3px dotted purple;
+            display: flex;
+            /* 
+            1.horizontal (Soman ak line a ) rakhar jonno justify-content 
+            2. ami jodi akta div re verically and horizontally majhe rakhte chai tahole 
+            display:flex;
+            justify-content: center ; 
+            align-item: center; 
+            Rakha jai (Important)
+
+            */
+            justify-content: center;
+            height: 300px;
+            /* vertically (Niche Niche Rakhar jonno) align-items: ; */
+            align-items: center;
+
+
+        }
+    </style>
+</head>
+<!-- .container>.box{Box-$}*3 -->
+<div class="container">
+    <div class="box">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+    <div class="box">Box-4</div>
+</div>
+
+<body>
+
+</body>
+
+</html>
