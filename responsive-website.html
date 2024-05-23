@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            /* automatically set the content to center responsively */
+            border: 1px solid plum;
+        }
+
+        h1 {
+            font-size: 8vw;
+            /* viewport width =vw , means viewport width ar 10% niba */
+        }
+
+        .tiger img {
+            width: 100%;
+        }
+
+        .container-two {
+            display: flex;
+
+        }
+
+        .container-two .split {
+            width: 50%;
+
+        }
+
+        .split img {
+            width: 100%;
+        }
+
+        @media screen and (max-width:576px) {
+            .container-two {
+                flex-direction: column-reverse;
+            }
+
+            .container-two .split {
+                width: 100%;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Responsive Explore</h1>
+    </section>
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/car.jpg" alt="">
+            </div>
+            <div class="split"><img src="images/tiger2.webp" alt=""></div>
+        </div>
+    </section>
+    <!-- 
+            1.viewport meta tag
+            2.CSS Relative Mesrearing Unit
+            3.Responsive Image (Fluid Image)
+            4.Body max-width and margin auto
+            5.Split Screen Using Flex
+
+
+         -->
+</body>
+
+</html>
